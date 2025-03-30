@@ -1,0 +1,14 @@
+# Ignore output directory
+/scratch/work/masooda1/ToxBERT/output/
+/scratch/work/masooda1/ToxBERT/molbert_100epochs/checkpoints/
+/scratch/work/masooda1/ToxBERT/notebooks/
+*.out
+
+# Common checkpoint patterns (optional, but recommended)
+*.ckpt
+*.pth
+*.pt
+
+# Jupyter Notebook patterns (optional, but recommended)
+.ipynb_checkpoints
+*.ipynb

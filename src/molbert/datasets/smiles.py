@@ -49,6 +49,7 @@ class BertSmilesDataset(BaseBertDataset):
                 raise ValueError("Unsupported file format. Please provide a CSV or pickle file.")
             data = data.fillna(-1)
             self.labels = data[label_column].values
+            print("labels inside BertSmilesDataset", self.labels.shape)
 
     def calculate_physchem_props(self, smiles: str):
         physchem, valid = self.physchem_featurizer.transform_single(smiles)

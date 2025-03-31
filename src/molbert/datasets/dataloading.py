@@ -377,7 +377,7 @@ def get_dataloaders(featurizer, targets, num_workers,config_dict, train_shuffle 
 
     if targets == "invivo":
         train_input_path = config_dict['invivo_train']
-        val_input_path = config_dict['invivo_val']
+        val_input_path = config_dict['invivo_test']
         label_column = config_dict["invivo_columns"]
         num_tasks = config_dict["num_invivo_tasks"]
         batch_size = config_dict["invivo_batch_size"]
